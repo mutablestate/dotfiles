@@ -15,9 +15,10 @@ $
 
 # Command Line History (newest to oldest):
 :exit
-:Explore
 :w
+:Explore
 :set paste
+:W
 :!mix deps.get
 :e mix.exs
 :pwd
@@ -40,43 +41,54 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
-	
-"1	LINE	0
+"0	LINE	0
+	end
+""1	LINE	0
 	
 "2	LINE	0
-	set t_ti= t_te=
+	end
 "3	LINE	0
-	    options in your .vimrc.  To disable restoring:
+	class VCRTest < Test::Unit::TestCase
 "4	LINE	0
-	or non-Windows Vim: You can set or reset the 't_ti' and 't_te'
+	
 "5	LINE	0
-	
+	set t_ti= t_te=
 "6	LINE	0
-	  end
+	    options in your .vimrc.  To disable restoring:
 "7	LINE	0
-	
+	or non-Windows Vim: You can set or reset the 't_ti' and 't_te'
 "8	LINE	0
-	  test "" do
-"9	LINE	0
 	
+"9	LINE	0
+	  end
 "-	CHAR	0
-	 
+	k
 
 # File marks:
-'0  39  0  ~/
-'1  204  0  ~/.vimrc
-'2  6  0  ~/Code/experimental/Elixir-learning/fizzbuzz/lib/fizzbuzz.ex
-'3  117  0  ~/.vimrc
-'4  9  0  ~/Code/experimental/Elixir-learning/fizzbuzz/test/fizzbuzz_test.exs
-'5  1  1  ~/Code/experimental/Elixir-learning/fizzbuzz/test/fizzbuzz_test.exs
-'6  8  0  ~/Code/production/jcc-client
-'7  8  0  ~/Code/production/jcc-client/app/controllers
-'8  55  31  ~/.vim/colors/molokai.vim
-'9  8  0  ~/Code/experimental/twitter-image
+'0  2  2  ~/Code/production/jcc-client/app/views/static_pages/services.html.erb
+'1  1  20  ~/Code/production/jcc-client/test/requests/hellosign_test.rb
+'2  1  0  ~/Code/school-rails/traidhos/app/views/static_pages/community.html.erb
+'3  3  8  ~/dotfiles/.gitignore
+'4  97  0  ~/
+'5  204  0  ~/.vimrc
+'6  6  0  ~/Code/experimental/Elixir-learning/fizzbuzz/lib/fizzbuzz.ex
+'7  117  0  ~/.vimrc
+'8  9  0  ~/Code/experimental/Elixir-learning/fizzbuzz/test/fizzbuzz_test.exs
+'9  1  1  ~/Code/experimental/Elixir-learning/fizzbuzz/test/fizzbuzz_test.exs
 
 # Jumplist (newest first):
--'  39  0  ~/
+-'  2  2  ~/Code/production/jcc-client/app/views/static_pages/services.html.erb
+-'  1  0  ~/Code/production/jcc-client
+-'  3  0  ~/Code/production/jcc-client/app/views/static_pages/services.html.erb
+-'  1  20  ~/Code/production/jcc-client/test/requests/hellosign_test.rb
+-'  39  0  ~/Code/production/jcc-client/test/requests/hellosign_test.rb
+-'  1  0  ~/Code/school-rails/traidhos/app/views/static_pages/community.html.erb
+-'  8  0  ~/Code/school-rails/traidhos/app/models
+-'  1  0  ~/Code/school-rails/traidhos/app/models/contact.rb
+-'  1  0  ~/gnome-terminal-colors-solarized
+-'  3  8  ~/dotfiles/.gitignore
+-'  1  0  ~/dotfiles/.gitignore
+-'  97  0  ~/
 -'  1  0  ~/
 -'  204  0  ~/.vimrc
 -'  117  0  ~/.vimrc
@@ -86,16 +98,14 @@ $
 -'  9  0  ~/Code/experimental/Elixir-learning/fizzbuzz/test/fizzbuzz_test.exs
 -'  7  0  ~/Code/experimental/Elixir-learning/fizzbuzz/mix.exs
 -'  1  0  ~/Code/experimental/Elixir-learning/fizzbuzz/test/fizzbuzz_test.exs
--'  8  0  ~/Code/production/jcc-client
--'  8  0  ~/Code/production/jcc-client/test
--'  1  0  ~/Code/production/jcc-client
+-'  143  0  ~/Code/production/jcc-client
 -'  8  0  ~/Code/production/jcc-client/app/controllers
 -'  55  31  ~/.vim/colors/molokai.vim
 -'  1  0  ~/.vim/colors/molokai.vim
 -'  8  0  ~/Code/experimental/twitter-image
 -'  1  0  ~/Code/experimental/twitter-image
--'  89  0  ~/Code/production/jcc-client
--'  24  0  ~/Code/production/jcc-client/app
+-'  224  0  ~/Code/production/jcc-client
+-'  56  0  ~/Code/production/jcc-client/app
 -'  8  0  ~/Code/production
 -'  1  0  ~/Code/production
 -'  4  0  ~/.bashrc
@@ -111,30 +121,30 @@ $
 -'  128  0  ~/.vimrc
 -'  1  0  ~/.vimrc
 -'  9  55  ~/.vimrc
--'  251  0  ~/Code/production/jcc-client
+-'  386  0  ~/Code/production/jcc-client
 -'  107  0  ~/.vimrc
 -'  1  0  ~/Code/production/jcc-client/app/controllers/application_controller.rb
 -'  104  14  ~/.vimrc
 -'  120  0  ~/.vimrc
--'  359  0  ~/Code/production/jcc-client
+-'  494  0  ~/Code/production/jcc-client
 -'  6  0  ~/.tmux.conf
 -'  1  0  ~/.tmux.conf
 -'  1  0  ~/Code/production/jcc-client/app/controllers/api/sessions_controller.rb
--'  172  0  ~/
+-'  230  0  ~/
 -'  1  0  ~/.vim/bundle
 -'  96  0  ~/.vimrc
 -'  4  0  ~/.vimrc
 -'  5  0  ~/.vimrc
 -'  238  0  ~/.vimrc
--'  265  0  ~/
+-'  323  0  ~/
 -'  29  0  ~/.vim/bundle
 -'  38  0  ~/.vim/bundle
 -'  100  0  ~/.vimrc
--'  273  0  ~/
+-'  331  0  ~/
 -'  8  0  ~/Code/school-rails/prem
 -'  1  0  ~/Code/school-rails/prem
 -'  2  18  ~/Code/experimental/Elixir-learning/parse_elixir_client/lib/parse_elixir_client.ex
--'  377  0  ~/
+-'  435  0  ~/
 -'  1  0  ~/.bash_profile
 -'  1  0  ~/dotfiles/vim/vimrc
 -'  1  0  ~/dotfiles/vim/vimrc
@@ -163,18 +173,61 @@ $
 -'  1  0  ~/dotfiles/vim/vimrc
 -'  1  0  ~/dotfiles/vim/vimrc
 -'  1  0  ~/dotfiles/vim/vimrc
--'  1  0  ~/dotfiles/vim/vimrc
--'  1  0  ~/dotfiles/vim/vimrc
--'  1  0  ~/dotfiles/vim/vimrc
--'  1  0  ~/dotfiles/vim/vimrc
--'  1  0  ~/dotfiles/vim/vimrc
--'  1  0  ~/dotfiles/vim/vimrc
--'  1  0  ~/.bash_profile
--'  1  0  ~/dotfiles/vim/vimrc
--'  1  0  ~/dotfiles/vim/vimrc
--'  8  0  ~/Code/school-rails/prem
+-'  1  20  ~/Code/production/jcc-client/test/requests/hellosign_test.rb
 
 # History of marks within files (newest to oldest):
+
+> ~/Code/production/jcc-client/app/views/static_pages/services.html.erb
+	"	2	2
+	.	2	0
+	+	3	0
+	+	3	0
+	+	2	0
+
+> ~/Code/production/jcc-client/test/test_helper.rb
+	"	1	0
+
+> ~/Code/production/jcc-client/test/requests/hellosign_test.rb
+	"	1	20
+	.	39	0
+	+	39	0
+	+	31	5
+	+	32	0
+	+	33	36
+	+	39	0
+	+	39	0
+	+	33	0
+	+	39	0
+
+> ~/dotfiles/README.md
+	"	1	4
+	^	1	5
+	.	1	4
+	+	2	0
+	+	1	4
+
+> ~/dotfiles/.vimrc
+	"	120	0
+	^	120	1
+	.	120	0
+	+	128	0
+	+	120	0
+
+> ~/Code/school-rails/traidhos/app/models/contact.rb
+	"	1	0
+
+> ~/Code/school-rails/traidhos/app/views/static_pages/community.html.erb
+	"	1	0
+
+> ~/dotfiles/.gitignore
+	"	3	8
+	^	3	9
+	.	3	8
+	+	1	8
+	+	2	8
+	+	3	11
+	+	4	0
+	+	3	8
 
 > ~/.vimrc
 	"	204	0
@@ -283,9 +336,6 @@ $
 	"	1	0
 
 > ~/Code/production/jcc-client/config/application.rb
-	"	1	0
-
-> ~/Code/production/jcc-client/app/views/static_pages/services.html.erb
 	"	1	0
 
 > ~/Code/production/jcc-client/app/controllers/contacts_controller.rb

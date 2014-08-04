@@ -83,8 +83,21 @@ set ignorecase
 set smartcase
 
 " Tab completion
+set wildmenu
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
+
+" multi-purpose tab key (auto-complete)
+function! InsertTabWrapper()
+  let col = col('.') - 1
+  if !col || getline('.')[col - 1] !~ '\k'
+    return "\<tab>"
+  else
+    return "\<c-p>"
+  endif
+endfunction
+inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+inoremap <s-tab> <c-n>
 
 " Status bar
 set laststatus=2
@@ -117,7 +130,7 @@ endif
 set t_Co=256
 "set t_Co=16
 set background=dark
-"colorscheme solarized
+colorscheme solarized
 "colorscheme Tomorrow-Night-Eighties
 "colorscheme base16-default
 "colorscheme grb256
@@ -125,7 +138,7 @@ set background=dark
 "colorscheme xoria256
 "colorscheme wombat256
 "colorscheme zenburn
-colorscheme molokai
+"colorscheme molokai
 "colorscheme base16-eighties
 
 " highlight the current line
@@ -145,8 +158,8 @@ set ruler
 "set guifont="Terminus\ 9"
 
 " Show trailing whitespace and spaces before a tab:
-:highlight ExtraWhitespace ctermbg=red guibg=red
-:autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\\t/
+highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\\t/
 
 augroup markdown
   au!
