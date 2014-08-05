@@ -2,7 +2,8 @@ Ruby / Elixir revised for Mint 17
 ================================
 Install solarized for Gnome Terminal
 ------------------------------------
-Add new terminal profile 'solarized'
+
+Add new GNOME terminal profile 'solarized'
 ```
   sudo apt-get install dconf-cli
   git clone https://github.com/Anthony25/gnome-terminal-colors-solarized
@@ -12,6 +13,7 @@ Add new terminal profile 'solarized'
 
 Install dotfiles 
 ----------------
+
 ```
   git clone https://github.com/mutablestate/dotfiles.git
   cd dotfiles
@@ -20,6 +22,7 @@ Install dotfiles
 
 Pull plugins
 ------------
+
 ```
   cd dotfiles
   git submodule init
@@ -28,10 +31,11 @@ Pull plugins
 
 Add powerline fonts
 -------------------
+
 ```
 git clone https://github.com/Lokaltog/powerline-fonts.git
 cd powerline-fonts
+sudo mv LiberationMono /usr/share/fonts/truetype
+sudo fc-cache -fv
 ```
-install your fave mono font
-select the font in 'solarized' terminal profile
-
+Edit 'solarized' GNOME Terminal profile and select Liberation Mono for Powerline
