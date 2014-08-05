@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/ben/dotfiles'
-let g:netrw_dirhist_2='/home/ben/Code/production/jcc-client'
-let g:netrw_dirhist_3='/home/ben/Code/production/jcc-client/app'
-let g:netrw_dirhist_4='/home/ben/Code/production/jcc-client/app/views'
-let g:netrw_dirhist_5='/home/ben/Code/production/jcc-client/app/views/static_pages'
-let g:netrw_dirhist_6='/home/ben/Code/production/jcc-client'
-let g:netrw_dirhist_7='/home/ben/Code/production/jcc-client/app'
-let g:netrw_dirhist_8='/home/ben/Code/production/jcc-client/app/views'
-let g:netrw_dirhist_9='/home/ben/Code/production/jcc-client/app/views/static_pages'
+let g:netrw_dirhist_cnt =0

@@ -42,41 +42,45 @@ $
 
 # Registers:
 "0	LINE	0
-	end
+	
 ""1	LINE	0
-	
+	https://github.com/Anthony25/gnome-terminal-colors-solarized.git
 "2	LINE	0
-	end
+	
 "3	LINE	0
-	class VCRTest < Test::Unit::TestCase
+	end
 "4	LINE	0
-	
+	class VCRTest < Test::Unit::TestCase
 "5	LINE	0
-	set t_ti= t_te=
-"6	LINE	0
-	    options in your .vimrc.  To disable restoring:
-"7	LINE	0
-	or non-Windows Vim: You can set or reset the 't_ti' and 't_te'
-"8	LINE	0
 	
+"6	LINE	0
+	set t_ti= t_te=
+"7	LINE	0
+	    options in your .vimrc.  To disable restoring:
+"8	LINE	0
+	or non-Windows Vim: You can set or reset the 't_ti' and 't_te'
 "9	LINE	0
-	  end
+	
 "-	CHAR	0
-	k
+	i
 
 # File marks:
-'0  2  2  ~/Code/production/jcc-client/app/views/static_pages/services.html.erb
-'1  1  20  ~/Code/production/jcc-client/test/requests/hellosign_test.rb
-'2  1  0  ~/Code/school-rails/traidhos/app/views/static_pages/community.html.erb
-'3  3  8  ~/dotfiles/.gitignore
-'4  97  0  ~/
-'5  204  0  ~/.vimrc
-'6  6  0  ~/Code/experimental/Elixir-learning/fizzbuzz/lib/fizzbuzz.ex
-'7  117  0  ~/.vimrc
-'8  9  0  ~/Code/experimental/Elixir-learning/fizzbuzz/test/fizzbuzz_test.exs
-'9  1  1  ~/Code/experimental/Elixir-learning/fizzbuzz/test/fizzbuzz_test.exs
+'0  6  0  ~/dotfiles/README.md
+'1  8  0  ~/dotfiles
+'2  2  2  ~/Code/production/jcc-client/app/views/static_pages/services.html.erb
+'3  1  20  ~/Code/production/jcc-client/test/requests/hellosign_test.rb
+'4  1  0  ~/Code/school-rails/traidhos/app/views/static_pages/community.html.erb
+'5  3  8  ~/dotfiles/.gitignore
+'6  97  0  ~/
+'7  204  0  ~/.vimrc
+'8  6  0  ~/Code/experimental/Elixir-learning/fizzbuzz/lib/fizzbuzz.ex
+'9  117  0  ~/.vimrc
 
 # Jumplist (newest first):
+-'  6  0  ~/dotfiles/README.md
+-'  1  4  ~/dotfiles/README.md
+-'  8  0  ~/dotfiles
+-'  1  0  ~/dotfiles
 -'  2  2  ~/Code/production/jcc-client/app/views/static_pages/services.html.erb
 -'  1  0  ~/Code/production/jcc-client
 -'  3  0  ~/Code/production/jcc-client/app/views/static_pages/services.html.erb
@@ -172,10 +176,19 @@ $
 -'  1  0  ~/dotfiles/vim/vimrc
 -'  1  0  ~/dotfiles/vim/vimrc
 -'  1  0  ~/dotfiles/vim/vimrc
--'  1  0  ~/dotfiles/vim/vimrc
--'  1  20  ~/Code/production/jcc-client/test/requests/hellosign_test.rb
 
 # History of marks within files (newest to oldest):
+
+> ~/dotfiles/README.md
+	"	6	0
+	^	6	0
+	.	6	0
+	+	7	0
+	+	1	0
+	+	7	0
+	+	2	0
+	+	5	0
+	+	6	0
 
 > ~/Code/production/jcc-client/app/views/static_pages/services.html.erb
 	"	2	2
@@ -198,13 +211,6 @@ $
 	+	39	0
 	+	33	0
 	+	39	0
-
-> ~/dotfiles/README.md
-	"	1	4
-	^	1	5
-	.	1	4
-	+	2	0
-	+	1	4
 
 > ~/dotfiles/.vimrc
 	"	120	0
