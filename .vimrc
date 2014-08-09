@@ -161,6 +161,9 @@ set ruler
 highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\\t/
 
+" Remove trailing whitespace
+autocmd BufWritePre {*.rb,*.js,*.coffee,*.scss,*.haml,*.ex,*.exs} :%s/\s\+$//e
+
 augroup markdown
   au!
   au BufReadPost *.md,*.markdown setlocal tw=80
