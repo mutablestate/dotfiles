@@ -162,7 +162,7 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\\t/
 
 " Remove trailing whitespace
-autocmd BufWritePre {*.rb,*.js,*.coffee,*.scss,*.haml,*.ex,*.exs} :%s/\s\+$//e
+autocmd BufWritePre {*.rb,*.js,*.coffee,*.scss,*.haml,*.ex,*.exs,*.eex} :%s/\s\+$//e
 
 augroup markdown
   au!
@@ -174,6 +174,8 @@ augroup elixir
   au!
   au FileType elixir noremap <buffer> <leader>t :!mix test<cr>
 augroup END
+
+au BufNewFile,BufRead *.eex set filetype=html
 
 augroup vimrcEx
   " Clear all autocmds in the group
