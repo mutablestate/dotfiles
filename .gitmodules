@@ -49,3 +49,6 @@
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
+[submodule "bundle/multiple-cursors"]
+	path = bundle/multiple-cursors
+	url = http://github.com/terryma/vim-multiple-cursors.git
