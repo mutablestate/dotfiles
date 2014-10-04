@@ -175,8 +175,6 @@ augroup elixir
   au FileType elixir noremap <buffer> <leader>t :!mix test<cr>
 augroup END
 
-au BufNewFile,BufRead *.eex set filetype=html
-
 augroup vimrcEx
   " Clear all autocmds in the group
   autocmd!
