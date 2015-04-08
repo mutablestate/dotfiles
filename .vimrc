@@ -172,7 +172,7 @@ augroup END
 
 augroup elixir
   au!
-  au FileType elixir noremap <buffer> <leader>t :!mix test<cr>
+  au FileType elixir noremap <buffer> <leader>t :!PORT=4001 mix test<cr>
 augroup END
 
 augroup vimrcEx
