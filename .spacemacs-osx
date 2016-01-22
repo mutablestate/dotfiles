@@ -19,18 +19,18 @@ values."
    dotspacemacs-configuration-layers
    '(
     emacs-lisp
-    markdown
-    syntax-checking
-    auto-completion
-    company-mode
     erlang
     elixir
     ruby
-    ruby-on-rails
+    javascript
+    markdown
+    yaml
+    html
+    syntax-checking
+    auto-completion
     git
     dash
     osx
-    html
     org
     colors
     themes-megapack
@@ -113,7 +113,7 @@ values."
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
    dotspacemacs-default-font '("Hack"
-                               :size 14
+                               :size 16
                                :weight normal
                                :width normal
                                :powerline-scale 1.0)
@@ -223,6 +223,7 @@ user code."
   (setq-default
    ruby-align-to-stmt-keywords '(if while unless until begin case for def)
    ruby-enable-ruby-on-rails-support t
+   ;; ruby-enable-enh-ruby-mode t
    ruby-version-manager 'rbenv
    indent-tabs-mode nil
    evil-shift-width 2
@@ -249,16 +250,17 @@ user code."
         alchemist-mode-hanging-paren-deep-indent-level 2)
 
   ;; Ruby
-  (setq ruby-enable-enh-ruby-mode t)
-  (add-hook 'ruby-mode-hook 'minitest-mode)
-  (eval-after-load 'minitest'(minitest-install-snippets))
+  ;; (add-hook 'enh-ruby-mode-hook
+  ;; (remove-hook 'enh-ruby-mode-hook 'ruby-end-mode)
+
+  ;; (eval-after-load 'minitest'(minitest-install-snippets))
+  ;; (add-hook 'enh-ruby-mode-hook 'minitest-mode)
   (add-hook 'enh-ruby-mode-hook
             '(lambda ()
                 (modify-syntax-entry ?_ "w")
                 (setq enh-ruby-deep-indent-paren nil
                       flycheck-rubocoprc "~/.rubocop.yml"
                       evil-shift-width 2)))
-  (remove-hook 'enh-ruby-mode-hook 'ruby-end-mode)
 
   ;; Only use spaces
   (setq-default basic-offset 2)
@@ -267,7 +269,6 @@ user code."
 
   (setq-default line-spacing 1)
   (setq linum-format "%4d ")
-  (set-fringe-mode '(10 . 0))
 
   ;; Auto-refresh dired on file change
   (add-hook 'dired-mode-hook 'auto-revert-mode)
@@ -279,11 +280,19 @@ user code."
  This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
   (require 'auto-complete)
+
+  ;; Disable bold font weight globally
+  (mapc
+   (lambda (face)
+     (set-face-attribute face nil :weight 'normal :underline nil))
+   (face-list))
+
   ;; Disable bookmarks
   (setq bookmark-save-flag nil)
   (setq powerline-default-separator nil)
 
   (setq enh-ruby-add-encoding-comment-on-save nil)
+  (setq ruby-insert-encoding-magic-comment nil)
 
   ;; Disable debugging now that my configuration has loaded.
   (setq debug-on-error nil)
