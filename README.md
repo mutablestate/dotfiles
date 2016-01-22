@@ -1,7 +1,17 @@
-Ruby / Elixir revised for Mint 17
-================================
-Install solarized for Gnome Terminal
-------------------------------------
+## Spacemacs Ruby / Elixir config for OSX
+
+```
+  brew install emacs --with-cocoa
+  echo export PATH="$HOME/emacs:$PATH" >> ~/.bash_profile
+  git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+  mv dotfiles/.spacemacs-osx Users/{name}/.spacemacs
+```
+Add `.rubocop.yml` to `Users/{name}`
+
+
+## Vim Ruby / Elixir config revised for Mint 17
+
+### Install solarized for Gnome Terminal
 
 Add new GNOME terminal profile 'solarized'
 ```
@@ -11,8 +21,7 @@ Add new GNOME terminal profile 'solarized'
   ./install.sh
 ```
 
-Install dotfiles 
-----------------
+### Install dotfiles
 
 ```
   git clone https://github.com/mutablestate/dotfiles.git
@@ -20,8 +29,7 @@ Install dotfiles
   ./bootstrap.sh
 ```
 
-Pull plugins
-------------
+### Pull plugins
 
 ```
   cd dotfiles
@@ -29,8 +37,7 @@ Pull plugins
   git submodule update
 ```
 
-Add powerline fonts
--------------------
+### Add powerline fonts
 
 ```
 git clone https://github.com/Lokaltog/powerline-fonts.git

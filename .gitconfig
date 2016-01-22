@@ -1,0 +1,22 @@
+[push]
+	default = simple
+[color]
+	ui = true
+[rerere]
+	enabled = 1
+[core]
+	autocrlf = input
+	editor = Emacs
+	excludesfile = /Users/{name}/.gitignore
+[branch]
+	autosetuprebase = always
+[pull]
+	rebase = true
+[alias]
+	s = status -s
+	lg = log --oneline --decorate --all --graph
+[credential]
+	helper = cache
+[user]
+	name = {username}
+	email = {email}
