@@ -29,6 +29,7 @@ values."
     syntax-checking
     auto-completion
     git
+    restclient
     dash
     osx
     org
